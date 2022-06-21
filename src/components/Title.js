@@ -1,8 +1,9 @@
 import React from 'react';
 
-const { headline } = this.props;
+// const  headline } = t;
 class Title extends React.Component {
   render() {
+    const { headline } = this.props;
     return (
       <div>
         <h2>{headline}</h2>
@@ -10,5 +11,9 @@ class Title extends React.Component {
     );
   }
 }
+
+Title.propTypes = {
+  headline: PropTypes.string.isRequired,
+};
 
 export default Title;
